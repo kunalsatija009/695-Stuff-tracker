@@ -60,6 +60,13 @@
 				$body.removeClass('is-preload');
 			}, 100);
 		});
+	
+	//Rotate Floating Icons
+		$(window).scroll(function() {
+			var theta = $(window).scrollTop() / 200 % Math.PI;
+			$('#leftgear').css({ transform: 'rotate(' + theta + 'rad)' });
+			$('#rightgear').css({ transform: 'rotate(-' + theta + 'rad)' });
+		});
 
 	// Dropdowns.
 		$('#nav > ul').dropotron({
