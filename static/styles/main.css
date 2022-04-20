@@ -2579,6 +2579,24 @@ input::-moz-focus-inner {
 				text-align: center;
 			}
 
+/*Float*/
+	#leftgear{
+		position: fixed;
+		bottom: 15px;
+		right: 225px;
+		height: 145px;
+		opacity: 40%;
+	}
+
+	#rightgear{
+		position: fixed;
+		top: 315px;
+		left: 225px;
+		height: 145px;
+		opacity: 40%;
+	}
+
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
@@ -2691,6 +2709,17 @@ input::-moz-focus-inner {
 					margin: 0 1em 0 0;
 				}
 
+		#leftgear{
+			position: fixed;
+			bottom: 15px;
+			right: 125px;
+		}
+
+		#rightgear{
+			position: fixed;
+			top: 315px;
+			left: 125px;
+		}
 	}
 
 /* Mobile */
@@ -3094,5 +3123,18 @@ input::-moz-focus-inner {
 					.carousel article .image {
 						margin-bottom: 2em;
 					}
+			#leftgear{
+				position: fixed;
+				bottom: 15px;
+				right: 25px;
+				z-index: -1000;
+			}
+
+			#rightgear{
+				position: fixed;
+				top: 315px;
+				left: 25px;
+				z-index: -1000;
+			}
 
 	}
